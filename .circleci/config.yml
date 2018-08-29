@@ -1,0 +1,4 @@
+version: 2
+jobs:
+ build:
+  image: circleci/ruby-2.4
