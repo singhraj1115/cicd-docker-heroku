@@ -2,4 +2,10 @@ version: 2
 jobs:
  build:
   docker:
-     image: circleci/ruby-2.4
+    - image: circleci/ruby-2.4
+  steps:
+    - checkout
+    - run:
+       name: Testing Again
+       command: echo "testing Again"
+    
