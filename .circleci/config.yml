@@ -8,4 +8,8 @@ jobs:
     - run:
        name: Testing Again
        command: echo "testing Again"
-    
+ deploy:
+   docker:
+     - image: debain:stretch
+   steps:
+     - checkout
