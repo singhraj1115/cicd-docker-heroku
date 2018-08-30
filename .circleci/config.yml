@@ -22,7 +22,7 @@ jobs:
           #docker login --email=$HEROKU_LOGIN --username=$HEROKU_LOGIN --password=$HEROKU_API_KEY registry.heroku.com
           docker login -u=$HEROKU_LOGIN -p=$HEROKU_API_KEY registry.heroku.com
           ls -la
-          docker build --rm=false registry.heroku.com/APP_NAME .
+          docker build --rm=false -t registry.heroku.com/heroku-docker-app-new/web .
           docker images
 workflows:
  version: 2
