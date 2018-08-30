@@ -24,6 +24,7 @@ jobs:
           ls -la
           docker build --rm=false -t registry.heroku.com/heroku-docker-app-new/web .
           docker images
+          docker push registry.heroku.com/heroku-docker-app-new/web:latest
 workflows:
  version: 2
  build-deploy:
