@@ -10,7 +10,7 @@ jobs:
        command: echo "testing Again"
  deploy:
    docker:
-     - image: debain:stretch
+     - image: debian:stretch
    steps:
      - checkout
      - run:
