@@ -19,7 +19,7 @@ jobs:
         command: heroku apps
      - run: 
          name: Heroku CLI
-         command: sudo snap install --classic heroku
+         command: curl https://cli-assets.heroku.com/install.sh | sh
      - run:
         name: Login to Heroku
         command: |
