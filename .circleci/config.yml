@@ -17,18 +17,17 @@ jobs:
         name: Check Docker Version
         #command: docker ps  
         command: heroku apps
-     - run: 
-         name: Heroku CLI
-         command: curl https://cli-assets.heroku.com/install.sh | sh
      - run:
         name: Login to Heroku
         command: |
+          curl https://cli-assets.heroku.com/install.sh | sh
           #docker login --email=$HEROKU_LOGIN --username=$HEROKU_LOGIN --password=$HEROKU_API_KEY registry.heroku.com
           docker login -u=$HEROKU_LOGIN -p=$HEROKU_API_KEY registry.heroku.com
           ls -la
           docker build --rm=false -t registry.heroku.com/heroku-docker-app-new/web .
           docker images
           docker push registry.heroku.com/heroku-docker-app-new/web:latest
+          heroku help:container
           heroku container:release web
 workflows:
  version: 2
