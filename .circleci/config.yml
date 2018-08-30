@@ -8,7 +8,5 @@ jobs:
          name: Heroku CLI
          command: |
           curl https://cli-assets.heroku.com/install.sh | sh
-          heroku apps
-          sudo apt-get update
           heroku help container
    
