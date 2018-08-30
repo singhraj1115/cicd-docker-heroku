@@ -24,9 +24,8 @@ jobs:
           docker login -u=$HEROKU_LOGIN -p=$HEROKU_API_KEY registry.heroku.com
           ls -la
           curl https://cli-assets.heroku.com/install.sh | sh
-          heroku help container
           heroku container:push web --app heroku-docker-app-new
-          heroku help container
+          curl https://cli-assets.heroku.com/install.sh | sh
           heroku container:release web --app heroku-docker-app-new
 workflows:
  version: 2
