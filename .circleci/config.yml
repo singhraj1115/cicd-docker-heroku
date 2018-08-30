@@ -17,6 +17,9 @@ jobs:
         name: Check Docker Version
         #command: docker ps  
         command: heroku apps
+     - run: 
+         name: Heroku CLI
+         command: sudo snap install --classic heroku
      - run:
         name: Login to Heroku
         command: |
