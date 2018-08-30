@@ -27,7 +27,7 @@ jobs:
           docker build --rm=false -t registry.heroku.com/heroku-docker-app-new/web .
           docker images
           docker push registry.heroku.com/heroku-docker-app-new/web:latest
-          heroku help:container
+          heroku help container
           heroku container:release web
 workflows:
  version: 2
