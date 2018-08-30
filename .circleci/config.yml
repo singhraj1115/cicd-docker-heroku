@@ -15,7 +15,7 @@ jobs:
      - checkout
      - run:
          name: deploying to heroku 
-         command: heroku apps
+         command: docker ps
 workflows:
  version: 2
  build-deploy:
