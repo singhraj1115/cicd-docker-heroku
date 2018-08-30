@@ -10,7 +10,7 @@ jobs:
        command: echo "testing Again"
  deploy:
    machine:
-     enable:true
+     enabled:true
    steps:
      - checkout
      - run:
