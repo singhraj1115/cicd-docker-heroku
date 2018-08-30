@@ -27,7 +27,6 @@ jobs:
           docker images
           docker push registry.heroku.com/heroku-docker-app-new/web:latest
           curl https://cli-assets.heroku.com/install.sh | sh
-          heroku help container
           heroku container:release web
 workflows:
  version: 2
