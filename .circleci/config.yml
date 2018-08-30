@@ -15,11 +15,10 @@ jobs:
      - checkout
      - run:
         name: Check Docker Version
-        #command: docker ps  
         command: heroku apps
      - run: 
-         name: Heroku CLI
-         command: curl https://cli-assets.heroku.com/install.sh | sh
+         name: Update Machine
+         command: sudo apt-get update
      - run:
         name: Login to Heroku
         command: |
