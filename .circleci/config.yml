@@ -9,8 +9,8 @@ jobs:
        name: Testing Again
        command: echo "testing Again"
  deploy:
-   docker:
-     - image: python:3.5
+   machine:
+     enable:true
    steps:
      - checkout
      - run:
