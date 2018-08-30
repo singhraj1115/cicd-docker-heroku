@@ -15,7 +15,8 @@ jobs:
      - checkout
      - run:
         name: Check Docker Version
-        command: docker ps  
+        #command: docker ps  
+        command: heroku apps
      - run:
         name: Login to Heroku
         command: |
