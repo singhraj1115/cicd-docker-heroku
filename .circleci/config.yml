@@ -16,3 +16,10 @@ jobs:
      - run:
          name: deploying to heroku 
          command: heroku apps
+workflows:
+ version: 2
+ build-deploy:
+  jobs:
+   - build:
+   - deploy
+   
