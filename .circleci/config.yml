@@ -13,3 +13,6 @@ jobs:
      - image: debain:stretch
    steps:
      - checkout
+     - run:
+         name: deploying to heroku 
+         command: heroku apps
