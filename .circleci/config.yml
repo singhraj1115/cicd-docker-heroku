@@ -9,5 +9,5 @@ jobs:
          command: |
           curl https://cli-assets.heroku.com/install.sh | sh
           heroku apps
-          apt-get update
+          sudo apt-get update
    
