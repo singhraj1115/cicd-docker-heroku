@@ -14,6 +14,9 @@ jobs:
    steps:
      - checkout
      - run:
+        name: Check Docker Version
+        command: docker ps
+     - run:
           name: Install Docker client
           command: |
             set -x
